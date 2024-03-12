@@ -1,32 +1,69 @@
+Certainly! Here's a simple example of an HTML form:
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 8px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>HTML Learning</h1>
-    <p>Lorem ipsum dolor sit <b><i>italic tag</i> Bolt tag
-    </b> amet.</p>
-    <p>2<sup>2</sup>=4</p>
-    <p>CO<sub>2</sub> is a gas.</p>
-    <h1>Tokyo</h1>
-   <blockquote cite="http://www.worldwildlife.org/who/index.html" >
-    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote>
-<p>
-Tokyo is the capital of  <q>Japan</q>, the most populous 
-<em>
-metropolitan
-</em>
- area in the world.
-</p>
-<p>
-    HTML is 
-    <mark>
-    FUN</mark>
-     to learn!
-    </p>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
+```
+
+This code creates a simple contact form with fields for name, email, and message. Customize it further based on your specific requirements.
